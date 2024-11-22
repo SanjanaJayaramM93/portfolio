@@ -1,0 +1,239 @@
+/* Global body styling */
+body {
+  background-color: black; /* Set background color for the body */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensure background covers the entire screen */
+  color: rgba(255, 255, 255, 0.959); /* Default text color for better contrast */
+}
+
+/* Container for the projects section */
+.projects-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the background covers the entire wrapper */
+  padding: 40px 20px; /* Reduce side padding */
+  min-height: 100vh; /* Ensure the section takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; /* Center horizontally */
+  width: 100%; /* Ensure it takes up full width */
+  max-width: 100%; /* No max-width to make full use of screen width */
+  margin: 0 auto; /* Center the wrapper */
+}
+
+/* Projects container */
+.projects-container {
+  min-height: 100vh;
+  padding: 50px 20px; /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+/* Title styling for the PROJECTS section */
+.projects-container h2 {
+  font-size: 48px; /* Keep title size */
+  margin: 60px 0 40px; /* Spacing around the title */
+  color: white; /* White text for contrast */
+  text-align: center; /* Center title */
+  font-weight: bold;
+}
+
+/* Filter buttons container */
+.filter-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/* General button styling */
+.filter-buttons button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s;
+}
+
+/* Individual button colors */
+.filter-buttons .btn-all {
+  background-color: #666666; /* Gray */
+}
+
+.filter-buttons .btn-cybersecurity {
+  background-color: #ff4757; /* Red */
+}
+
+.filter-buttons .btn-webdev {
+  background-color: #1e90ff; /* Blue */
+}
+
+.filter-buttons .btn-react {
+  background-color: #61dafb; /* React Blue */
+}
+.filter-buttons .btn-node {
+  background-color: #0d6d1d; /* Green */
+}
+
+.filter-buttons .btn-python {
+  background-color: #ffdd57; /* Yellow */
+}
+
+.filter-buttons .btn-forensics {
+  background-color: #9b59b6; /* Purple */
+}
+
+.filter-buttons .btn-devops {
+  background-color: #2ecc71; /* Green */
+}
+.filter-buttons .btn-cloud {
+  background-color: #00BFFF; /* Deep Sky Blue */
+}
+.filter-buttons .btn-threatmodeling {
+  background-color: #FFA500; /* Orange */
+}
+.filter-buttons .btn-dsa {
+  background-color: #3498db; /* Sky Blue */
+}
+
+.filter-buttons .btn-pentest {
+  background-color: #e74c3c; /* Dark Red */
+}
+
+/* Hover effect for filter buttons */
+.filter-buttons button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* Active button style */
+.filter-buttons button.active {
+  background-color: #d4a524;
+  color: #fff;
+}
+
+/* Grid styling for the projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 projects per row */
+  gap: 10px; /* Adjust the space between cards */
+  margin-top: 20px;
+  width: 100%;
+  padding: 30px 30px; /* Reduced padding for left and right */
+  box-sizing: border-box;
+}
+
+/* Individual project card styling with alternating colors */
+.project-card:nth-child(odd) {
+  background-color: rgba(5, 5, 26, 0.747); /* First color */
+}
+
+.project-card:nth-child(even) {
+  background-color: rgb(31, 30, 32); /* Second color */
+}
+
+.project-card {
+  padding: 25px; /* Reduced padding for more space inside the card */
+  border-radius: 50px; /* Slightly more rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for a deeper effect */
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.project-card .title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #c9dd16;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow for better contrast */
+}
+
+/* Hover effect on project card */
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(223, 107, 107, 0.3);
+}
+
+/* Styling for project card links */
+.project-card a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for GitHub Repo button */
+.github-button {
+  display: inline-block;
+  background-color: #333; /* Dark button color */
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px; /* Add space between content and button */
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for GitHub button */
+.github-button:hover {
+  background-color: #ddc123d7;
+  transform: scale(1.05);
+}
+.project-card p strong {
+  color: #e74c3c;  
+}
+
+/* Description and other text inside card */
+.project-card p {
+  font-size: 16px;
+  color: #d9e1e4;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; 
+    gap: 15px; 
+  }
+
+  .project-card {
+    max-width: 90%; 
+    margin: 0 auto;
+  }
+
+  .projects-container h2 {
+    font-size: 36px; 
+    margin-top: 200px
+  }
+
+  .filter-buttons {
+    flex-direction: column; 
+    gap: 10px;
+  }
+}

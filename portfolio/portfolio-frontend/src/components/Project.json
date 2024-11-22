@@ -1,0 +1,115 @@
+[
+    {
+      "id": 1,
+      "title": "Red Team Automated Hypothesis (RAH) Tool",
+      "date": "Feb 2024 – Dec 2024",
+      "technologies": "React, Python, Flask, BloodHound, CrackMapExec, Impacket, OpenVAS, MITRE ATT&CK, Windows Event Logs, Threat Hunting, Hypothesis Creation, Active Directory Enumeration",
+      "description": "Developed an end-to-end cybersecurity tool to automate threat detection and hypothesis generation. Integrated red team techniques and a React front-end with a Python Flask back-end to streamline internal reconnaissance and vulnerability management. The tool performs tasks like Active Directory enumeration, Kerberoasting, and SMB enumeration, leveraging tools such as BloodHound, CrackMapExec, and Impacket. Incorporated OpenVAS for vulnerability scanning and used MITRE ATT&CK to model attack scenarios, enhancing incident response capabilities. Also developed scripts to parse and analyze Windows event logs for hypothesis validation.",
+      "github": "https://github.com/SanjanaJayaramM93/Internal-Recon/blob/main/README.md",
+      "tags": ["Cybersecurity", "React", "Python", "Pentest", "Web Development","Threat Modeling"]
+    },
+    {
+      "id": 2,
+      "title": "CI/CD Automation with Dockerized Jenkins: Secure Pipeline for Node.js Web Application Deployment",
+      "date": "August 2024 – Sept 2024",
+      "technologies": "Jenkins, Docker, Docker Compose, Security Scanning(Snyk), Node.js, GitHub, CI/CD Pipelines",
+      "description": "Designed and implemented a secure, automated CI/CD pipeline using Jenkins and Docker to deploy a sample Node.js web application. Configured Docker-In-Docker (DinD) within a Docker Compose setup to allow Jenkins to execute Docker commands inside containers for building, testing, and deploying applications. Integrated Snyk to perform continuous security scanning, halting the pipeline if critical vulnerabilities were detected, ensuring only secure code is deployed. Enhanced the pipeline with logging and monitoring capabilities, capturing logs for build, test, and security scans for troubleshooting and auditing. All configurations and scripts were version-controlled using GitHub for seamless collaboration and documentation.",
+      "github": "https://github.com/SanjanaJayaramM93/Project2--Compose/blob/main/README.md",
+      "tags": [ "Web Development",  "DevOps", "Node.js"]
+    },
+    
+    {
+      "id": 3,
+      "title": "Secure DevOps Pipeline for Application Deployment",
+      "date": "October 2024 – November 2024",
+      "technologies": "Docker, Docker Compose, AWS CodePipeline, Clair, Portainer, NextCloud, PostgreSQL, Microsoft Threat Modeling Tool",
+      "description": "Designed and implemented a secure CI/CD pipeline for deploying a Python-based web application using AWS CodePipeline. Leveraged Docker and Docker Compose to containerize the application and deployed a self-hosted NextCloud stack with PostgreSQL for secure file storage. Integrated Portainer for container management with access controls and monitoring capabilities. Conducted vulnerability scanning with Clair to identify and mitigate security risks in container images. Utilized STRIDE threat modeling with the Microsoft Threat Modeling Tool to assess risks and design mitigation strategies. Incorporated AWS CloudWatch for logging and monitoring, enabling real-time security alerts and system performance tracking.",
+      "github": "https://github.com/SanjanaJayaramM93/secDev-A3-express-es6-sample/blob/master/README.md",
+      "tags": ["DevOps", "Threat Modeling", "Cloud Computing"]
+    },
+    {
+      "id": 4,
+      "title": "Temporal Logic-Based Log Entry Association & Analysis Tool",
+      "date": "Jul 2023 – Oct 2023",
+      "technologies": "Python, Event Log Analysis, Temporal Logic, GUI Development",
+      "description": "Developed a Python-based tool for analyzing event logs, focusing on identifying infrequent events, discovering associations, and performing temporal logic analysis to reconstruct event sequences. Automated the identification of infrequent events and associations between log entries, streamlining the analysis process for security teams. Incorporated temporal logic to ensure accurate event sequencing and enhanced detection of complex attack patterns. Designed a user-friendly GUI with live data support, enabling real-time log analysis and improving accessibility for non-technical users.",
+      "github": "https://github.com/SanjanaJayaramM93/-Temporal-Logic-Based-Log-Entry-Association-Analysis-Tool/blob/main/README.md", 
+      "tags": ["Python", "Cybersecurity"]
+    },
+    {
+      "id": 5,
+      "title": "Web Application for Freight Network Management",
+      "date": "June 2023",
+      "technologies": "React.js, Express.js, React Bootstrap, Node.js",
+      "description": "Developed a web application to manage and track truck departures and arrivals for a freight network. The frontend was built with React.js and React Bootstrap, creating a responsive interface for displaying truck details, adding new trucks, and allowing users to edit and delete entries. A RESTful API was developed using Express.js to handle requests for truck data, with implemented GET, POST, PUT, and DELETE endpoints. The application utilized a static JSON dictionary for storing and managing truck data, allowing for efficient filtering and modification based on user input. The layout was designed to include key components such as truck data tables and forms for adding and editing truck entries.",
+      "github": "https://github.com/SanjanaJayaramM93/Web-Application-for-Freight-Network-Management/blob/main/README.md",
+      "tags": ["React", "Node.js","Web Development"]
+    },
+    {
+      "id": 6,
+      "title": "Secure DevOps for E-Commerce Platform (Saleor)",
+      "date": "Jul 2024 – Aug 2024",
+      "technologies": "Kubernetes, Docker, Google Kubernetes Engine (GKE), React, PostgreSQL, Redis, Trivy, Continuous Monitoring, Vulnerability Scanning",
+      "description": "Designed and deployed a microservices-based e-commerce application (Saleor) using Docker, Kubernetes, and Google Kubernetes Engine (GKE) to ensure scalable and isolated services. Secured the application by implementing Docker best practices, such as running containers as non-root users and setting resource limits. Integrated Trivy for vulnerability scanning to detect risks within container images. Established continuous monitoring and logging solutions to provide real-time performance and security insights. Developed detailed documentation to outline the infrastructure setup, security configurations, and monitoring dashboards, ensuring long-term maintainability and transparency.",
+      "github": "https://github.com/SanjanaJayaramM93/ISEC6000-SecureDevOps/blob/main/README.md",
+      "tags": [ "DevOps", "Cloud Computing" ,"Web Development","React"]
+    }
+    ,
+    {
+      "id": 7,
+      "title": "Shop Finding and Navigation System ",
+      "date": "Oct 2023",
+      "technologies": "Graphs, Depth-First Search (DFS), Breadth-First Search (BFS), Hash Tables, Heaps",
+      "description": "Designed and implemented a comprehensive Shop Finding and Navigation System using various data structures to model and navigate a network of shops in a shopping center or mall. Utilized graph data structures for shop connections and built an adjacency list to visualize the network. Implemented node operations to add, delete, and update shop details, including name, category, and ratings. Applied DFS and BFS algorithms for pathfinding and comparison of results. Integrated a hash table for instant shop search by category, and used heaps to manage and sort shop ratings. Incorporated error handling and real-time updates to ensure system integrity.",
+      "github": "https://github.com/SanjanaJayaramM93/Shop-Finding-and-Navigation-System/blob/main/README.md",
+      "tags": ["DSA","Python"]
+    }
+    ,
+    {
+      "id": 8,
+      "title": "JustTweet ",
+      "date": "May 2023",
+      "technologies": "React.js, React-Bootstrap, MongoDB",
+      "description": "Developed a social media-like application using React.js for the front-end and MongoDB for data storage, focusing on a dynamic and responsive user interface. Key features include tweet creation, where users can post tweets stored in MongoDB, a real-time tweet counter based on MongoDB data, and dynamic tweet retrieval for displaying tweets on the front-end. Leveraged React-Bootstrap for responsive layout design and ensured compatibility across devices. Applied React component composition and mapping for maintainable and efficient code.",
+      "github": "https://github.com/SanjanaJayaramM93/JustTweet-React.js-Project-/blob/main/README.md",
+      "tags": ["React", "Web Development"]
+    },
+    {
+      "id": 9,
+      "title": "Ice Cream Distribution Web Application ",
+      "date": "March 2023",
+      "technologies": "Django, HTML, SQLite",
+      "description": "Developed a Django web application to manage the distribution of ice cream across multiple stores. Implemented models for Store and Tub with attributes like store name, location, tub size, vegan and gluten-free status. Created migrations for a SQLite database and implemented URL routing for listing Tubs, Stores, and detailed Store views. On the frontend, used Django templates for dynamic rendering of data and navigation links. Implemented business logic to calculate the total volume of ice cream in each store based on tub sizes. Analyzed security considerations to suggest appropriate access control for CRUD operations based on user roles, such as store managers and visitors.",
+      "github": "https://github.com/SanjanaJayaramM93/Ice-Cream-Distribution-Web-Application/blob/main/README.md",
+      "tags": ["Python", "Web Development"]
+    },
+    {
+      "id": 10,
+      "title": "Concert Stage Simulation Project ",
+      "date": "April 2023 – May 2023",
+      "technologies": "Object-Oriented Programming, Python",
+      "description": "Developed a Concert Stage Simulation for a fictional rock band, Spinal Tap, using object-oriented principles to model key components of the stage, including lights, smoke machines, props, backdrop, and choreography. The simulation allowed dynamic interactions between these components, such as synchronized lighting effects and smoke dispersion. Implemented object-oriented models for stage elements, with features like dynamic light synchronization, smoke behavior simulation, and backdrop flexibility. Enabled automation of the stage setup through choreography files, with command-line control for input parameters. Future work could involve extending the simulation to 3D visualizations and more complex interactions.",
+      "github": "https://github.com/SanjanaJayaramM93/Concert-Stage-Simulation-Project/blob/main/README.md",
+      "tags": ["Python"]
+    },
+    {
+      "id": 11,
+      "title": "EasyToDo ",
+      "date": "May 2023",
+      "technologies": "Express.js, MongoDB, Pug, Mongoose, Node Js",
+      "description": "Built a task management application using Express.js and MongoDB for the back-end, with functionality for CRUD operations. Integrated MongoDB with Mongoose for data storage and management. Developed Express.js endpoints to create (POST) and retrieve (GET) tasks, along with implementing task deletion. Utilized Pug templates for rendering dynamic task lists on the front-end. Configured a cloud-based MongoDB instance to store and retrieve task data, ensuring scalability and accessibility. The project allows for seamless task management and dynamic updates in a user-friendly interface.",
+      "github": "https://github.com/SanjanaJayaramM93/EasyToDo-Express.js-Project-/blob/main/README.md",
+      "tags": [ "Node.js", "Web Development"]
+    },
+    {
+      "id": 12,
+      "title": "Digital Forensics Investigation of a Compromised Windows System",
+      "date": "May 2024 – Jun 2024",
+      "technologies": "Arsenal Image Mounter, FTK Imager, Autopsy, PowerShell, Eric Zimmerman Tools",
+      "description": "Conducted an in-depth forensic investigation on a compromised Windows system, analysing file artifacts, metadata, registry entries, and application execution traces to uncover unauthorised access by suspected users. Utilized forensic tools like FTK Imager and Autopsy to mount and examine a forensic image in a controlled virtual environment. Analysed user activity through recent documents, jump lists, and prefetch data, verifying the integrity of digital evidence using hash value calculations. Compiled detailed forensic reports documenting unauthorised access to confidential files, providing actionable insights for future security measures.",
+      "github": "https://github.com/SanjanaJayaramM93/digital-forensics-investigation", 
+      "tags": ["Cybersecurity", "Forensics"]
+    }
+    
+  ]
+  

@@ -1,0 +1,197 @@
+/* Container styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000; 
+  text-align: center;
+  padding: 0 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Create circles of different sizes and colors */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  animation: moveCircles 25s linear infinite, glow 2s ease-in-out infinite alternate;
+  opacity: 0.5;
+  background-color: black; 
+  border: 2px solid; 
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.7); 
+}
+
+.circle.small {
+  width: 10px;
+  height: 10px;
+  animation-duration: 25s;
+  border-color: rgba(0, 0, 255, 0.7); 
+}
+
+.circle.tiny {
+  width: 6px;
+  height: 6px;
+  animation-duration: 30s;
+  border-color: rgba(138, 43, 226, 0.7); 
+}
+
+.circle.medium {
+  width: 14px;
+  height: 14px;
+  animation-duration: 28s;
+  border-color: rgba(181, 112, 187, 0.7); 
+}
+
+/* Animation for moving circles */
+@keyframes moveCircles {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(200px, -150px);
+  }
+  50% {
+    transform: translate(400px, 200px);
+  }
+  75% {
+    transform: translate(-300px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Glow animation for the circles */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5), 0 0 10px rgba(138, 43, 226, 0.5), 0 0 15px rgba(255, 20, 147, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 1), 0 0 15px rgba(138, 43, 226, 1), 0 0 25px rgba(255, 20, 147, 1);
+  }
+}
+
+/* Styling for Home page title and description */
+.home-title {
+  font-size: 70px;
+  font-weight: bold;
+  color: transparent;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(90deg, #ff8c00, #ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 2s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+
+.home-description {
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  max-width: 800px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Button for Projects */
+.projects-button {
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 30px;
+  background: linear-gradient(90deg, #381180, #8500ff);
+  color: white;
+  font-size: 18px;
+  font-weight: bold; 
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background 0.5s, transform 0.3s ease;
+}
+
+.projects-button:hover {
+  background: linear-gradient(90deg, #8500ff, #381180);
+  transform: scale(1.15);
+}
+
+/* Social links styling */
+.social-links {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Positioned to the right for desktop view */
+  display: flex;
+  flex-direction: column; /* Vertical by default */
+  gap: 15px;
+  transform: translateY(-50%);
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: #a5c516;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  background-color: #fff;
+  border-color: #000;
+}
+
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .social-links {
+    position: static; 
+    margin-top: 20px; 
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 10px;
+  }
+
+  .social-icon {
+    width: 20px; 
+    height: 20px;
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+  .social-links {
+    flex-direction: row; 
+    justify-content: center;
+    gap: 8px; 
+    margin-top: 10px;
+  }
+
+  .social-icon {
+    width: 20px; 
+    height: 20px;
+  }
+  .home-title {
+    font-size: 30px;
+  }
+}

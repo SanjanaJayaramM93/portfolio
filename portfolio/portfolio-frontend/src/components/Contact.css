@@ -1,0 +1,217 @@
+/* Contact.css */
+
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black; 
+  
+  background-size: 250px 250px; 
+  background-position: center;
+  background-repeat: repeat;
+  padding: 0 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Split the page into two halves */
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for the animated text section */
+.animated-text {
+  width: 40%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+}
+
+/* Add a vertical separator between the animated text and the form */
+.separator {
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  margin: 0 20px;
+}
+
+/* Styling for the contact form container */
+.contact-form-container {
+  width: 60%; 
+  padding: 30px;
+  max-width: 700px;
+  margin-left: 20px;
+  background-color: transparent; 
+  box-shadow: none; 
+  border: none; 
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for form container */
+.contact-form-container:hover {
+  transform: scale(1.05);
+}
+
+/* Form styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Label styles */
+.contact-form label {
+  font-size: 1.2em;
+  text-align: left;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Space-line style for message, name, and email */
+.space-line {
+  border-bottom: 2px dashed #4c973d; /* Artistic dashed line */
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #777;
+  min-height: 30px;
+  text-align: left;
+  font-style: italic;
+}
+
+/* Input and textarea styles */
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  transition: border 0.3s ease;
+}
+
+/* Focus state for input fields */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4c973d;
+  outline: none;
+}
+
+/* Button styles */
+.contact-form button {
+  padding: 15px 25px;
+  background-color: #311e66;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #e29300;
+}
+
+/* Styling for Contact Heading */
+.contact-container h2 {
+  margin-top: 30px;
+  font-size: 2.5em; 
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Styling for the description text */
+.contact-container p {
+  font-size: 1.5em; 
+  margin-bottom: 30px;
+  color: #ddd; 
+  text-align: center;
+}
+
+.contact-form .space-line {
+  text-transform: none; 
+}
+.contact-form label {
+  text-transform: none;
+}
+.status-message {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4c973d; 
+  text-align: center;
+}
+
+.status-message.error {
+  color: #e74c3c; 
+}
+@media (max-width: 768px) {
+  /* Stack the contact-page content vertically for mobile/tablet */
+  .contact-page {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px; 
+  }
+
+  /* Make form container fully centered and responsive */
+  .contact-form-container {
+    width: 90%;
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+
+ 
+  .contact-container {
+    padding: 10px; 
+  }
+
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 14px; 
+    padding: 12px; 
+  }
+
+  /* Hide the separator */
+  .separator {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* adjustments for very small screens */
+  .contact-form-container {
+    width: 95%; 
+    padding: 15px; 
+  }
+
+  .contact-container h2 {
+    font-size: 1.8em; 
+  }
+
+  .contact-container p {
+    font-size: 1.2em; 
+  }
+}
